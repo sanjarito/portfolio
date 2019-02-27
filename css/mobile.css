@@ -161,20 +161,52 @@
 
 .date-timeline{
 font-family: 'Neucha', cursive;
+
 }
 .title-timeline{
   display: inline-flex;
   font-family: 'Neucha', cursive;
   margin-top: 0px;
   font-size: 22px;
+  font-weight: bold;
+  color:#46ACC2;
+
 }
 .company-timeline{
   display: inline-flex;
   font-family: 'Neucha', cursive;
   margin-left:5px;
-  font-size: 16px;
+  font-size: 14px;
+
+}
+.skills-ul{
+  background-color: white;
+  padding:20px;
+  border-radius:4px;
+  border-right: 30px;
+  border-right: 50%;
+  list-style: none;
 }
 
+.skills{
+  font-family: 'Neucha', cursive;
+
+}
+.skills-detail{
+  font-family: 'Neucha', cursive;
+  padding:10px;
+  margin:4px;
+
+}
+.others{
+  font-family: 'Neucha', cursive;
+
+}
+.others-detail{
+  font-family: 'Neucha', cursive;
+  padding:10px;
+  margin:4px;
+}
 
 
 /* HERO CONTAINER STYLING */
