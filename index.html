@@ -1,39 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
+    <title>Off the Grids</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha|Passion+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/desktop.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
+
+  <div class="Navbar">
+      <div class="Navbar__Link Navbar__Link-brand">
+        <picture>
+          <source media="(max-width: 770px)" srcset="images/logo-mobile.png">
+          <source media="(min-width: 771px)" srcset="images/logo-mobile.png">
+          <img class="Header-Image-Logo" src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+          <span class="Header-Title-Logo"><b>A. Portfolio. Page. By:
+          Santiago Casar</b>
+          </span>
+        </picture>
+        <div class="Navbar__Link Navbar__Link-toggle">
+        <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    <nav class="Navbar__Items Navbar__Items--right">
+      <div class="Navbar__Link">
+        About Me
+      </div>
+      <div class="Navbar__Link">
+        Experience
+      </div>
+      <div class="Navbar__Link">
+        Projects
+      </div>
+    </nav>
+  </div>
+
     <main role="main">
-        <header role="banner">
-            <h1>Hero</h1>
-        </header>
 
-        <section>
-            Section 1
-        </section>
+          <div class="hero-container">
+            <div class="about who">
+              <span class="about-title left">Who</span>
+              <span class="about-span left">
+                Web Developer driven by<br> technological
+                 curiosity <br> and creative problem <br> solving skills.
+              </span>
+            </div>
+            <div class="about why">
+              <span class="about-title right">Why</span>
+              <span class="about-span right">
+              I am a developer by choice, I believe in the power of technology to improve the lives of people.
+              </span>
+            </div>
 
-        <section>
-            Section 2
-        </section>
 
-        <section>
-            Section 3
-        </section>
 
-        <section>
-            Project 3
-        </section>
+          </div>
+
+
+
+          <section class="timeline">
+            <ul>
+              <img class="car-image" src="images/car-only.png">
+                <li>
+                  <div>
+                    <time><span class="date-timeline"><mark>September 2015 / Jan 2016</mark></span></time><br>
+                    <span class="title-timeline">Web Dev Immersive Program /</span><span class="company-timeline">GA</h3>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <time><span class="date-timeline"><mark>Jan 2016 / March 2016</mark></span></time><br>
+                    <span class="title-timeline">Teaching Assistant /</span><span class="company-timeline">GA</span>
+                  </div>
+                </li>
+              <li>
+                <div>
+                  <time><span class="date-timeline"><mark>March 2016 - Jan 2018</mark></span></time><br>
+                  <span class="title-timeline">Front End Web Developer /</span><span class="company-timeline">PixFizz</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time><span class="date-timeline"><mark>Jul 2018 - Dec 2018</mark></span></time><br>
+                  <span class="title-timeline">Computer Science Teacher /</span><span class="company-timeline">Fusion Academy</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+
 
         <section>
             Section 4
         </section>
     </main>
     <footer role="content-info">Footer</footer>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>
