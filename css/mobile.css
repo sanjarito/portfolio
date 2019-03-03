@@ -576,7 +576,7 @@ font-family: 'Neucha', cursive;
     @media screen and (min-width: 1201px){
       .portfolio{
         display:grid;
-        height:1150px;
+        height:1350px;
         grid-template-rows:repeat(10,1fr);
         grid-template-columns:repeat(10,1fr);
 
