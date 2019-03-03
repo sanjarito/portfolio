@@ -191,6 +191,7 @@ font-family: 'Neucha', cursive;
 #work {
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 .portfolio{
   background-color: #46ACC2;
