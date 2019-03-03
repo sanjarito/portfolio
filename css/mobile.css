@@ -186,7 +186,7 @@ font-family: 'Neucha', cursive;
 .main-content {
   /* padding:10%; */
   flex:1 1 100%;
-  min height: 100vh;
+  min-height: 100;
 }
 #work {
   display: flex;
