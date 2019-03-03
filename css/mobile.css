@@ -613,3 +613,13 @@ font-family: 'Neucha', cursive;
         background-image: url('../images/twilio.jpg');
       }
     }
+
+    @media screen and (min-width: 1601px){
+      .portfolio{
+        display:grid;
+        height:1550px;
+        grid-template-rows:repeat(10,1fr);
+        grid-template-columns:repeat(10,1fr);
+
+      }
+    }
