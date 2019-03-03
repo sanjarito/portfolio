@@ -20,6 +20,21 @@ $( ".how" ).mouseover(function() {
   $('.how').find('.about-span').addClass("show")
 })
 
+$('#work').one('click','img',function(e){
+  let img_Coordinates = ($(this).offset())
+  console.log(img_Coordinates['top'])
+  console.log(img_Coordinates['left'])
+  // $('.project-description').append(`<span>mnbmsdnbsdnbfnsbdfmnbsmndbfmnsbdsmnfb</span>`)
+  // $('.project-description').find('span').toggleClass('work-span')
+  // $('.project-description').find('div').css("top",`${img_Coordinates['top']}`)
+  // $('.project-description').find('div').css("left",`${img_Coordinates['left']}`)
+  // .offset()
+})
+
+$('.portfolio-item').on('click',function(){
+  $(this).children().toggle()
+})
+
 $('div.who').on('touchstart', function (e) {
     'use strict'; //satisfy code inspectors
     var link = $(this); //preselect the link

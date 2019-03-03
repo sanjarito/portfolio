@@ -1,6 +1,6 @@
 /* HERO CONTAINER STYLING */
 .hero-container{
-  height:400px;
+  height:250px;
   display:flex;
   flex-direction: row;
   background-image: linear-gradient(rgba(70, 172, 194, 0.5),rgba(221, 221, 221, 0.1)), url('../images/Santiago-Contour.png');
@@ -11,7 +11,6 @@
   background-blend-mode: screen;
   z-index: 1;
   font-family: 'Neucha', cursive;
-
 }
 .about{
   display: flex;
@@ -24,9 +23,6 @@
 .who{
   z-index: 2;
   background-color: rgba(96, 198, 220, .5)
-
-
-
 }
 .why{
   z-index: 2;
@@ -36,10 +32,6 @@
 .how{
   z-index: 2;
   background-color: rgba(45, 147, 169, .5)
-
-}
-.Navbar__Link-toggle {
-  display: none;
 }
 .about-span {
   display:none;
@@ -49,19 +41,22 @@
 .about-title{
   font-size:30px;
 }
-
 .left{
   margin-right: 50%;
 }
-
 .right {
   margin-left: 50%
 }
-
 .show {
   display:flex;
 }
 
+/* NAVBAR STYLING */
+.Navbar__Link-toggle {
+  display: none;
+}
+
+/* TIMELINE STYLING */
 .timeline ul li {
   list-style-type: none;
   position: relative;
@@ -70,7 +65,6 @@
   padding-top: 50px;
   background: #fff;
 }
-
 .timeline ul li::after {
   content: '';
   position: absolute;
@@ -82,10 +76,7 @@
   border-radius: 50%;
   background: inherit;
   background: #a2e87e;
-
-
 }
-
 .timeline ul li div {
   position: relative;
   bottom: 0;
@@ -93,7 +84,6 @@
   padding: 15px;
   background: #a2e87e;
 }
-
 .timeline ul li div::before {
   content: '';
   position: absolute;
@@ -102,63 +92,49 @@
   height: 0;
   border-style: solid;
 }
-
 .timeline ul li:nth-child(odd) div {
   left: 45px;
 }
-
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #a2e87e transparent transparent;
 }
-
 .timeline ul li:nth-child(even) div {
   left: -439px;
 }
-
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent #a2e87e;
 }
-
 .timeline ul li::after {
   background: #fff;
   transition: background .5s ease-in-out;
 }
-
 .timeline ul li.in-view::after {
   background: #46ACC2;
 }
-
 .timeline ul li div {
   visibility: hidden;
   opacity: 0;
   transition: all .5s ease-in-out;
 }
-
 .timeline ul li:nth-child(odd) div {
   transform: translate3d(200px,0,0);
 }
-
 .timeline ul li:nth-child(even) div {
   transform: translate3d(-200px,0,0);
 }
-
 .timeline ul li.in-view div {
   transform: none;
   visibility: visible;
   opacity: 1;
 }
-
 .car-image{
   display: block;
   margin: auto;
 }
-
-
-
 .date-timeline{
 font-family: 'Neucha', cursive;
 
@@ -170,15 +146,15 @@ font-family: 'Neucha', cursive;
   font-size: 22px;
   font-weight: bold;
   color:#46ACC2;
-
 }
 .company-timeline{
   display: inline-flex;
   font-family: 'Neucha', cursive;
   margin-left:5px;
   font-size: 14px;
-
 }
+
+/* SKILLS STYLING */
 .skills-ul{
   background-color: white;
   padding:20px;
@@ -196,11 +172,9 @@ font-family: 'Neucha', cursive;
   font-family: 'Neucha', cursive;
   padding:10px;
   margin:4px;
-
 }
 .others{
   font-family: 'Neucha', cursive;
-
 }
 .others-detail{
   font-family: 'Neucha', cursive;
@@ -208,11 +182,166 @@ font-family: 'Neucha', cursive;
   margin:4px;
 }
 
+/* PROJECTS SECTION CSS */
+.main-content {
+  /* padding:10%; */
+  flex:1 1 100%;
+  min height: 100vh;
+}
+#work {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio{
+  background-color: #46ACC2;
+  display:grid;
+  height:100%;
+  grid-template-rows:repeat(10,1fr);
+  grid-template-columns:repeat(10,1fr);
 
-/* HERO CONTAINER STYLING */
+}
+.portfolio-item {
+  background:white;
+  color:black;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:2em;
+}
+.box {
+  background-color:black;
+  background-blend-mode: screen;
+  color:white;
+  text-shadow:  0 0 4 px rgba(0, 0, 0, 0.85);
+  background-size: 100% 100%;
+  background-position: top left;
+  transition:all ease-in-out 300ms;
+  position:relative;
+  z-index: 10;
+}
+/* .arrow-up {
+  width: 0;
+  height: 0;
+  position:absolute;
+  top:0;
+  left:50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+}
+*/
+/* .arrow-down {
+  width: 0;
+  height: 0;
+  position:absolute;
+  top:0;
+  left:40%;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 20px solid white;
+} */
+
+.box:hover::before{
+  opacity: 0.1;
+  transition:all ease-in-out 300ms;
+}
+.box::before{
+  content:'';
+  display:block;
+  background:white;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  opacity: .7;
+  z-index: -1;
+}
+.show-project{
+  display:block;
+}
+.project-description{
+  display:none;
+  background-color: black;
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  opacity: .9;
+}
+.project-title{
+    padding: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color:white;
+    font-size:21px;
+}
+
+.work-description{
+  padding: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color:white;
+  font-size:17px;
+}
+
+.work-description-small{
+  padding: 5px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color:white;
+  font-size:17px;
+}
+.project-anchor{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color:white;
+  font-size:17px;
+}
 
 
-/* NAV BAR STYLING  */
+
+
+/* MEDIA QUERIES FOR TIMELINE */
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #a2e87e transparent transparent;
+  }
+  .car-image{
+    margin:0
+  }
+}
+
+/* MEDIA QUERIES FOR NAVBAR  */
 @media only screen and (max-width: 768px) {
   .Navbar__Items,
   .Navbar {
@@ -247,42 +376,239 @@ font-family: 'Neucha', cursive;
     display:flex;
   }
 }
-/* NAV BAR STYLING  */
 
-/* HERO CONTAINER STYLING */
-.hero-container{
-  height:250px
+
+/* MEDIA QUERIES FOR PROJECTS GRID */
+@media screen and (max-width: 449px){
+  .portfolio{
+    display:grid;
+    height:140%;
+    grid-template-rows:repeat(11,1fr);
+    grid-template-columns:repeat(2,1fr);
+
+  }
+  .email {
+    grid-row:span 4;
+    grid-column: span  3;
+    background-image: url('../images/email.png');
+  }
+  .climbing-app{
+    grid-row: span 3;
+    grid-column: span  3;
+    background-image: url('../images/climbing-app.png');
+  }
+  .page-stationery{
+
+    grid-row: span 4;
+    grid-column: span  1;
+    background-image: url('../images/page-stationery.png');
+  }
+  .salesforce{
+    grid-row: span 2;
+    grid-column: span  1;
+    background-image: url('../images/salesforce-hooks.jpg');
+  }
+  .photography{
+    display:none;
+    grid-row:span 4;
+    grid-column: span  2;
+    background-image: url('../images/photography.png');
+  }
+
+  .twilio{
+    grid-row: span 2;
+    grid-column: span  2;
+    background-image: url('../images/twilio.jpg');
+  }
 }
-/* HERO CONTAINER STYLING */
+@media screen and (min-width: 450px) and (max-width: 650px){
+  .portfolio{
+    grid-template-rows:repeat(13,1fr);
+    grid-template-columns:repeat(15,1fr);
+    height:100%;
+  }
+  .email {
+    grid-row:span 5;
+    grid-column: span  7;
+    background-image: url('../images/email.png');
+  }
+  .climbing-app{
+    grid-row:span 5;
+    grid-column: span  8;
+    background-image: url('../images/climbing-app.png');
+  }
+  .page-stationery{
+    grid-row:span 8;
+    grid-column: span  6;
+    background-image: url('../images/page-stationery.png');
+  }
+  .photography{
+    grid-row:span 4;
+    grid-column: span  9;
+    background-image: url('../images/photography.png');
+  }
+  .salesforce{
+    grid-row: span 4;
+    grid-column: span  5;
+    background-image: url('../images/salesforce-hooks.jpg');
+  }
+  .twilio{
+    grid-row: span 4;
+    grid-column: span  4;
+    background-image: url('../images/twilio.jpg');
+  }
 
-@media screen and (max-width: 900px) {
-  .timeline ul li div {
-    width: 250px;
-  }
-  .timeline ul li:nth-child(even) div {
-    left: -289px; /*250+45-6*/
-  }
 }
 
-@media screen and (max-width: 600px) {
-  .timeline ul li {
-    margin-left: 20px;
-  }
+@media screen and (min-width: 651px) and (max-width: 800px){
+    .portfolio{
+      height:100%;
+      grid-template-rows:repeat(8,1fr);
+      grid-template-columns:repeat(10,1fr);
 
-  .timeline ul li div {
-    width: calc(100vw - 91px);
-  }
-
-  .timeline ul li:nth-child(even) div {
-    left: 45px;
-  }
-
-  .timeline ul li:nth-child(even) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent #a2e87e transparent transparent;
-  }
-  .car-image{
-    margin:0
-  }
+    }
+    .email {
+      grid-row:span 3;
+      grid-column: span  4;
+      background-image: url('../images/email.png');
+    }
+    .climbing-app{
+      grid-row:span 3;
+      grid-column: span  6;
+      background-image: url('../images/climbing-app.png');
+    }
+    .page-stationery{
+      grid-row:span 5;
+      grid-column: span  3;
+      background-image: url('../images/page-stationery.png');
+    }
+    .photography{
+      grid-row:span 3;
+      grid-column: span  7;
+      background-image: url('../images/photography.png');
+    }
+    .salesforce{
+      grid-row: span 2;
+      grid-column: span  3;
+      background-image: url('../images/salesforce-hooks.jpg');
+    }
+    .twilio{
+      grid-row: span 2;
+      grid-column: span  4;
+      background-image: url('../images/twilio.jpg');
+    }
 }
+
+@media screen and (min-width: 801px) and (max-width: 1050px){
+
+    .email {
+      grid-row:span 4;
+      grid-column: span  4;
+      background-image: url('../images/email.png');
+    }
+    .climbing-app{
+      grid-row:span 4;
+      grid-column: span  6;
+      background-image: url('../images/climbing-app.png');
+    }
+    .page-stationery{
+      grid-row:span 20;
+      grid-column: span  3;
+      background-image: url('../images/page-stationery.png');
+    }
+    .photography{
+      grid-row:span 3;
+      grid-column: span  7;
+      background-image: url('../images/photography.png');
+    }
+    .salesforce{
+      grid-row: span 16;
+      grid-column: span  3;
+      background-image: url('../images/salesforce-hooks.jpg');
+    }
+    .twilio{
+      grid-row: span 16;
+      grid-column: span  4;
+      background-image: url('../images/twilio.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1051px) and (max-width: 1200px){
+    .portfolio{
+
+      height:130%;
+      grid-template-rows:repeat(24,1fr);
+      grid-template-columns:repeat(10,1fr);
+    }
+      .email {
+        grid-row:span 10;
+        grid-column: span  4;
+        background-image: url('../images/email.png');
+      }
+      .climbing-app{
+        grid-row:span 10;
+        grid-column: span  6;
+        background-image: url('../images/climbing-app.png');
+      }
+      .page-stationery{
+        grid-row:span 14;
+        grid-column: span  3;
+        background-image: url('../images/page-stationery.png');
+      }
+      .photography{
+        grid-row:span 8;
+        grid-column: span  7;
+        background-image: url('../images/photography.png');
+      }
+      .salesforce{
+        grid-row: span 7;
+        grid-column: span  3;
+        background-image: url('../images/salesforce-hooks.jpg');
+      }
+      .twilio{
+        grid-row: span 22;
+        grid-column: span  4;
+        background-image: url('../images/twilio.jpg');
+      }
+    }
+
+    @media screen and (min-width: 1201px){
+      .portfolio{
+        display:grid;
+        height:150%;
+        grid-template-rows:repeat(10,1fr);
+        grid-template-columns:repeat(10,1fr);
+
+      }
+      .email {
+        grid-row:span 4;
+        grid-column: span  4;
+        background-image: url('../images/email.png');
+      }
+      .climbing-app{
+        grid-row: span 4;
+        grid-column: span  6;
+        background-image: url('../images/climbing-app.png');
+      }
+      .page-stationery{
+        grid-row: span 55;
+        grid-column: span  3;
+        background-image: url('../images/page-stationery.png');
+      }
+      .photography{
+
+        grid-row:span 3;
+        grid-column: span  7;
+        background-image: url('../images/photography.png');
+      }
+      .salesforce{
+        grid-row: span 25;
+        grid-column: span  3;
+        background-image: url('../images/salesforce-hooks.jpg');
+      }
+      .twilio{
+        grid-row: span 25;
+        grid-column: span  4;
+        background-image: url('../images/twilio.jpg');
+      }
+    }
