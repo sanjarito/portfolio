@@ -186,7 +186,7 @@ font-family: 'Neucha', cursive;
 .main-content {
   /* padding:10%; */
   flex:1 1 100%;
-  
+
 }
 #work {
   display: flex;
@@ -537,38 +537,38 @@ font-family: 'Neucha', cursive;
   @media screen and (min-width: 1051px) and (max-width: 1200px){
     .portfolio{
 
-      height:130%;
-      grid-template-rows:repeat(24,1fr);
-      grid-template-columns:repeat(10,1fr);
+      height:100%;
+      grid-template-rows:repeat(17,1fr);
+      grid-template-columns:repeat(15,1fr);
     }
       .email {
-        grid-row:span 10;
-        grid-column: span  4;
+        grid-row:span 7;
+        grid-column: span  6;
         background-image: url('../images/email.png');
       }
       .climbing-app{
-        grid-row:span 10;
-        grid-column: span  6;
+        grid-row:span 7;
+        grid-column: span  9;
         background-image: url('../images/climbing-app.png');
       }
       .page-stationery{
-        grid-row:span 14;
-        grid-column: span  3;
+        grid-row:span 10;
+        grid-column: span  5;
         background-image: url('../images/page-stationery.png');
       }
       .photography{
-        grid-row:span 8;
-        grid-column: span  7;
+        grid-row:span 6;
+        grid-column: span  10;
         background-image: url('../images/photography.png');
       }
       .salesforce{
-        grid-row: span 7;
-        grid-column: span  3;
+        grid-row: span 4;
+        grid-column: span  5;
         background-image: url('../images/salesforce-hooks.jpg');
       }
       .twilio{
-        grid-row: span 22;
-        grid-column: span  4;
+        grid-row: span 4;
+        grid-column: span  5;
         background-image: url('../images/twilio.jpg');
       }
     }
