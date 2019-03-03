@@ -186,7 +186,7 @@ font-family: 'Neucha', cursive;
 .main-content {
   /* padding:10%; */
   flex:1 1 100%;
-  min-height:100vh;
+  
 }
 #work {
   display: flex;
@@ -576,7 +576,7 @@ font-family: 'Neucha', cursive;
     @media screen and (min-width: 1201px){
       .portfolio{
         display:grid;
-        height:150%;
+        height:100%;
         grid-template-rows:repeat(10,1fr);
         grid-template-columns:repeat(10,1fr);
 
