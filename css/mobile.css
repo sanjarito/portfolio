@@ -8,7 +8,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0.6;
-  background-blend-mode: screen;
+  /* background-blend-mode: screen; */
   z-index: 1;
   font-family: 'Neucha', cursive;
 }
@@ -60,10 +60,11 @@
 .timeline ul li {
   list-style-type: none;
   position: relative;
-  width: 6px;
+  width: 36px;
   margin: 0 auto;
   padding-top: 50px;
-  background: #fff;
+
+  background-image: url('../images/road2.png');
 }
 .timeline ul li::after {
   content: '';
@@ -75,13 +76,15 @@
   height: 30px;
   border-radius: 50%;
   background: inherit;
-  background: #a2e87e;
+
 }
 .timeline ul li div {
   position: relative;
   bottom: 0;
   width: 400px;
+
   padding: 15px;
+
   background: #a2e87e;
 }
 .timeline ul li div::before {
@@ -109,11 +112,12 @@
   border-color: transparent transparent transparent #a2e87e;
 }
 .timeline ul li::after {
-  background: #fff;
+
   transition: background .5s ease-in-out;
 }
 .timeline ul li.in-view::after {
-  background: #46ACC2;
+
+  background-image: url('../images/bus-stop.png');
 }
 .timeline ul li div {
   visibility: hidden;
@@ -152,6 +156,9 @@ font-family: 'Neucha', cursive;
   font-family: 'Neucha', cursive;
   margin-left:5px;
   font-size: 14px;
+}
+.description-time{
+  font-size: 18px;
 }
 
 /* SKILLS STYLING */
@@ -306,9 +313,133 @@ font-family: 'Neucha', cursive;
   font-size:17px;
 }
 
+/* SKILLS SECTION CSS */
+.skills-container{
+  width:100%;
+  position:relative;
+  margin:auto;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* opacity: .4; */
+  background-color: white;
+}
+
+.skills-image{
+  margin:auto;
+  display:block;
+}
 
 
 
+.skills-image {
+
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  mask: url('../images/skills@0,5x.png');
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+  animation: polygons 10s infinite;
+}
+  @keyframes polygons {
+  15% {
+  clip-path: polygon(36% 32%, 72% 32%, 70% 72%, 35% 73%);
+  background: yellow;
+  }
+
+  25% {
+  clip-path: polygon(3% 1%, 42% 18%, 78% 58%, 0 118%);
+  background: orange;
+  }
+  35% {
+  clip-path: polygon(36% 31%, 100% 8%, 93% 89%, 35% 71%);
+  background: cornflowerblue;
+  }
+  50% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+  }
+}
+
+/* FOOTER STYLING */
+a {
+  text-decoration: none
+}
+.generic-anchor {
+	color: #8DB9ED;
+	&:visited {
+		color: #8DB9ED
+	}
+	&:hover {
+		color: #ccc
+	}
+}
+.flex-rw {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer-list-anchor {
+  font: 1.3em "Open Sans", sans-serif
+}
+.footer-social-section {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 5px;
+}
+.footer-social-section::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 1px solid #ccc;
+  width: calc(100% - 20px)
+}
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: rgb(55,55,55);
+  padding: 0 20px
+}
+.footer-social-connect {
+  display: flex;
+  align-items: center;
+  font: 3.5em "Oswald", sans-serif;
+  color: #fff
+}
+.footer-social-small {
+  font-size: 0.6em;
+  padding: 0px 20px
+}
+.footer-social-overlap > a {
+  font-size: 3em
+}
+.footer-social-overlap > a:not(:first-child) {
+  margin-left: 0.38em
+}
+.footer-bottom-section {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  margin-top: 10px
+}
+.footer-bottom-section > div:first-child {
+  margin-right: auto
+}
+.footer-bottom-wrapper {
+  font-size: 1.5em;
+  color: #fff
+}
+.footer-address {
+  display: inline;
+  font-style: normal
+}
 /* MEDIA QUERIES FOR TIMELINE */
 @media screen and (max-width: 900px) {
   .timeline ul li div {
@@ -614,6 +745,7 @@ font-family: 'Neucha', cursive;
       }
     }
 
+
     @media screen and (min-width: 1601px){
       .portfolio{
         display:grid;
@@ -623,3 +755,79 @@ font-family: 'Neucha', cursive;
 
       }
     }
+
+    /* MEDIA QUERIES FOR FOOTER */
+
+    @media only screen and (max-width: 768px) {
+
+  .footer-social-connect {
+    font-size: 2.5em
+  }
+  .footer-social-overlap > a {
+    font-size: 2.24em
+  }
+  .footer-bottom-wrapper {
+    font-size: 1.3em
+  }
+}
+@media only screen and (max-width: 568px) {
+
+
+  .footer-social-section {
+    justify-content: center
+  }
+  .footer-social-section::after {
+    top: 25%
+  }
+  .footer-social-connect {
+    margin-bottom: 10px;
+    padding: 0 10px
+  }
+  .footer-social-overlap {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-social-icons-wrapper {
+    width: 100%;
+    padding: 0
+  }
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 20px;
+  }
+  .footer-bottom-section {
+    padding: 0 5px 10px 5px
+  }
+  .footer-bottom-wrapper {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-social-overlap > a {
+    margin: auto
+  }
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 0;
+  }
+  .footer-bottom-rights {
+    display: block
+  }
+}
+@media only screen and (max-width: 320px) {
+  .footer-list-header {
+    font-size: 2.2em
+  }
+  .footer-list-anchor {
+    font-size: 1.2em
+  }
+  .footer-social-connect {
+    font-size: 2.4em
+  }
+  .footer-social-overlap > a {
+    font-size: 2.24em
+  }
+  .footer-bottom-wrapper {
+    font-size: 1.3em
+  }
+}

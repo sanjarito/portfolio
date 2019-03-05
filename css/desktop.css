@@ -7,16 +7,39 @@ body {
 }
 footer {
   padding: 1% 0;
-  background-color: #aaa;
+  background-color: #c25c46;
 }
 header {
   padding: 12% 0;
 }
 section {
-  min-height: 200px;
   padding: 3% 0;
-  background-color: #bbb;
 }
+.section-title {
+width: 100%;
+text-align: center;
+font-size: 60px;
+
+}
+
+#timeline {
+  background-color: white;
+  position: relative;
+
+
+
+}
+
+/* .bus-background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+} */
+
+
 
 
 /* NAV BAR STYLING  */
