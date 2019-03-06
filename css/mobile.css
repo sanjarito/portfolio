@@ -3,7 +3,7 @@
   height:250px;
   display:flex;
   flex-direction: row;
-  background-image: linear-gradient(rgba(70, 172, 194, 0.5),rgba(221, 221, 221, 0.1)), url('../images/Santiago-Contour.png');
+  background-image: linear-gradient(rgba(70, 172, 194, 0.5),rgba(221, 221, 221, 0.1)), url('../images/work/Santiago-Contour.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@
   margin: 0 auto;
   padding-top: 50px;
 
-  background-image: url('../images/road2.png');
+  background-image: url('../images/work/road2.png');
 }
 .timeline ul li::after {
   content: '';
@@ -117,7 +117,7 @@
 }
 .timeline ul li.in-view::after {
 
-  background-image: url('../images/bus-stop.png');
+  background-image: url('../images/work/bus-stop.png');
 }
 .timeline ul li div {
   visibility: hidden;
@@ -199,9 +199,10 @@ font-family: 'Neucha', cursive;
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
+  background: grey;
 }
 .portfolio{
-  background-color: #46ACC2;
+
   display:grid;
   height:100%;
   grid-template-rows:repeat(10,1fr);
@@ -339,7 +340,7 @@ font-family: 'Neucha', cursive;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  mask: url('../images/skills@0,5x.png');
+  mask: url('../images/work/skills@0,5x.png');
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 
   animation: polygons 10s infinite;
@@ -511,83 +512,86 @@ a {
 
 
 /* MEDIA QUERIES FOR PROJECTS GRID */
-@media screen and (max-width: 449px){
+@media screen and (max-width: 550px){
   .portfolio{
     display:grid;
-    height:140%;
-    grid-template-rows:repeat(11,1fr);
+    margin: auto;
+    width: 100%;
+    padding: 10%;
+    height:2400px;
+    grid-template-rows:repeat(20,1fr);
     grid-template-columns:repeat(2,1fr);
+    grid-row-gap: 1em;
 
   }
   .email {
-    grid-row:span 4;
-    grid-column: span  3;
-    background-image: url('../images/email.png');
+    grid-row: span 4;
+    grid-column: span  2;
+    background-image: url('../images/work/mobile/email-mobile.png');
   }
   .climbing-app{
     grid-row: span 3;
-    grid-column: span  3;
-    background-image: url('../images/climbing-app.png');
+    grid-column: span  2;
+    background-image: url('../images/work/climbing-app.png');
   }
   .page-stationery{
-
-    grid-row: span 4;
-    grid-column: span  1;
-    background-image: url('../images/page-stationery.png');
+    grid-row: span 5;
+    grid-column: span  2;
+    background-image: url('../images/work/mobile/stationary-mobile.jpeg');
   }
   .salesforce{
-    grid-row: span 2;
+    grid-row: span 3;
     grid-column: span  1;
-    background-image: url('../images/salesforce-hooks.jpg');
+    background-image: url('../images/work/mobile/salesforce-mobile.jpg');
   }
-  .photography{
-    display:none;
-    grid-row:span 4;
+  .pixfizz{
+    grid-row: span 5;
     grid-column: span  2;
-    background-image: url('../images/photography.png');
+    background-image: url('../images/work/mobile/pixfizz-mobile.jpeg');
+
   }
 
   .twilio{
-    grid-row: span 2;
-    grid-column: span  2;
-    background-image: url('../images/twilio.jpg');
+    grid-row: span 3;
+    grid-column: span  1;
+    background-image: url('../images/work/mobile/twilio-mobile.jpg');
   }
 }
-@media screen and (min-width: 450px) and (max-width: 650px){
+@media screen and (min-width: 550px) and (max-width: 650px){
   .portfolio{
     grid-template-rows:repeat(13,1fr);
-    grid-template-columns:repeat(15,1fr);
+    grid-template-columns:repeat(14,1fr);
     height:100%;
   }
   .email {
     grid-row:span 5;
     grid-column: span  7;
-    background-image: url('../images/email.png');
+    background-image: url('../images/work/email.png');
   }
   .climbing-app{
     grid-row:span 5;
-    grid-column: span  8;
-    background-image: url('../images/climbing-app.png');
+    grid-column: span  7;
+    background-image: url('../images/work/climbing-app.png');
   }
   .page-stationery{
     grid-row:span 8;
-    grid-column: span  6;
-    background-image: url('../images/page-stationery.png');
+    grid-column: span  5;
+    background-image: url('../images/work/page-stationery.png');
   }
-  .photography{
+  .pixfizz{
     grid-row:span 4;
     grid-column: span  9;
-    background-image: url('../images/photography.png');
+    background-image: url('../images/work/pixfizz.png');
   }
   .salesforce{
     grid-row: span 4;
     grid-column: span  5;
-    background-image: url('../images/salesforce-hooks.jpg');
+    background-image: url('../images/work/salesforce-hooks.jpg');
   }
   .twilio{
     grid-row: span 4;
     grid-column: span  4;
-    background-image: url('../images/twilio.jpg');
+    background-image: url('../images/work/twilio.jpg');
   }
 
 }
@@ -595,165 +599,200 @@ a {
 @media screen and (min-width: 651px) and (max-width: 800px){
     .portfolio{
       height:100%;
-      grid-template-rows:repeat(8,1fr);
+      height:1000px;
+      grid-template-rows:repeat(20,1fr);
       grid-template-columns:repeat(10,1fr);
 
     }
     .email {
-      grid-row:span 3;
-      grid-column: span  4;
-      background-image: url('../images/email.png');
+      grid-row:span 8;
+      grid-column: span  5;
+      background-image: url('../images/work/email.png');
     }
     .climbing-app{
-      grid-row:span 3;
-      grid-column: span  6;
-      background-image: url('../images/climbing-app.png');
+      grid-row:span 8;
+      grid-column: span  5;
+      background-image: url('../images/work/climbing-app.png');
     }
     .page-stationery{
-      grid-row:span 5;
-      grid-column: span  3;
-      background-image: url('../images/page-stationery.png');
+      grid-row:span 10;
+      grid-column: span  4;
+      background-image: url('../images/work/page-stationery.png');
     }
-    .photography{
-      grid-row:span 3;
-      grid-column: span  7;
-      background-image: url('../images/photography.png');
+    .pixfizz{
+      grid-row:span 6;
+      grid-column: span  6;
+      background-image: url('../images/work/pixfizz.png');
     }
     .salesforce{
-      grid-row: span 2;
+      grid-row: span 4;
       grid-column: span  3;
-      background-image: url('../images/salesforce-hooks.jpg');
+      background-image: url('../images/work/salesforce-hooks.jpg');
     }
     .twilio{
-      grid-row: span 2;
-      grid-column: span  4;
-      background-image: url('../images/twilio.jpg');
+      grid-row: span 4;
+      grid-column: span  3;
+      background-image: url('../images/work/twilio.jpg');
     }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1050px){
 
+    .portfolio{
+      height:100%;
+      height:1000px;
+      grid-template-rows:repeat(20,1fr);
+      grid-template-columns:repeat(10,1fr);
+    }
     .email {
-      grid-row:span 4;
-      grid-column: span  4;
-      background-image: url('../images/email.png');
+      grid-row:span 7;
+      grid-column: span  5;
+      background-image: url('../images/work/email.png');
     }
     .climbing-app{
-      grid-row:span 4;
-      grid-column: span  6;
-      background-image: url('../images/climbing-app.png');
+      grid-row:span 7;
+      grid-column: span  5;
+      background-image: url('../images/work/climbing-app.png');
     }
     .page-stationery{
-      grid-row:span 20;
+      grid-row:span 10;
       grid-column: span  3;
-      background-image: url('../images/page-stationery.png');
+      background-image: url('../images/work/page-stationery.png');
     }
-    .photography{
-      grid-row:span 3;
+    .pixfizz{
+      grid-row:span 6;
       grid-column: span  7;
-      background-image: url('../images/photography.png');
+      background-image: url('../images/work/pixfizz.png');
     }
     .salesforce{
-      grid-row: span 16;
+      grid-row: span 4;
       grid-column: span  3;
-      background-image: url('../images/salesforce-hooks.jpg');
+      background-image: url('../images/work/salesforce-hooks.jpg');
     }
     .twilio{
-      grid-row: span 16;
+      grid-row: span 4;
       grid-column: span  4;
-      background-image: url('../images/twilio.jpg');
+      background-image: url('../images/work/twilio.jpg');
     }
   }
 
   @media screen and (min-width: 1051px) and (max-width: 1200px){
     .portfolio{
 
-      height:1000px;
+      height:1200px;
       grid-template-rows:repeat(17,1fr);
-      grid-template-columns:repeat(15,1fr);
+      grid-template-columns:repeat(14,1fr);
     }
       .email {
         grid-row:span 7;
-        grid-column: span  6;
-        background-image: url('../images/email.png');
+        grid-column: span  7;
+        background-image: url('../images/work/email.png');
       }
       .climbing-app{
         grid-row:span 7;
-        grid-column: span  9;
-        background-image: url('../images/climbing-app.png');
+        grid-column: span  7;
+        background-image: url('../images/work/climbing-app.png');
       }
       .page-stationery{
         grid-row:span 10;
-        grid-column: span  5;
-        background-image: url('../images/page-stationery.png');
+        grid-column: span  4;
+        background-image: url('../images/work/page-stationery.png');
       }
-      .photography{
+      .pixfizz{
         grid-row:span 6;
         grid-column: span  10;
-        background-image: url('../images/photography.png');
+        background-image: url('../images/work/pixfizz.png');
       }
       .salesforce{
         grid-row: span 4;
         grid-column: span  5;
-        background-image: url('../images/salesforce-hooks.jpg');
+        background-image: url('../images/work/salesforce-hooks.jpg');
       }
       .twilio{
         grid-row: span 4;
         grid-column: span  5;
-        background-image: url('../images/twilio.jpg');
+        background-image: url('../images/work/twilio.jpg');
       }
     }
 
     @media screen and (min-width: 1201px){
       .portfolio{
+
+        height:1400px;
+        grid-template-rows:repeat(17,1fr);
+        grid-template-columns:repeat(14,1fr);
+      }
+        .email {
+          grid-row:span 7;
+          grid-column: span  7;
+          background-image: url('../images/work/email.png');
+        }
+        .climbing-app{
+          grid-row:span 7;
+          grid-column: span  7;
+          background-image: url('../images/work/climbing-app.png');
+        }
+        .page-stationery{
+          grid-row:span 10;
+          grid-column: span  4;
+          background-image: url('../images/work/page-stationery.png');
+        }
+        .pixfizz{
+          grid-row:span 6;
+          grid-column: span  10;
+          background-image: url('../images/work/pixfizz.png');
+        }
+        .salesforce{
+          grid-row: span 4;
+          grid-column: span  5;
+          background-image: url('../images/work/salesforce-hooks.jpg');
+        }
+        .twilio{
+          grid-row: span 4;
+          grid-column: span  5;
+          background-image: url('../images/work/twilio.jpg');
+        }
+
+
+    @media screen and (min-width: 1590px){
+      .portfolio{
         display:grid;
-        height:1350px;
-        grid-template-rows:repeat(10,1fr);
-        grid-template-columns:repeat(10,1fr);
+        height:1600px;
+        grid-template-rows:repeat(17,1fr);
+        grid-template-columns:repeat(14,1fr);
 
       }
       .email {
-        grid-row:span 4;
-        grid-column: span  4;
-        background-image: url('../images/email.png');
+        grid-row:span 7;
+        grid-column: span  7;
+        background-image: url('../images/work/email.png');
       }
       .climbing-app{
-        grid-row: span 4;
-        grid-column: span  6;
-        background-image: url('../images/climbing-app.png');
+        grid-row:span 7;
+        grid-column: span  7;
+        background-image: url('../images/work/climbing-app.png');
       }
       .page-stationery{
-        grid-row: span 55;
-        grid-column: span  3;
-        background-image: url('../images/page-stationery.png');
+        grid-row:span 10;
+        grid-column: span  4;
+        background-image: url('../images/work/page-stationery.png');
       }
-      .photography{
-
-        grid-row:span 3;
-        grid-column: span  7;
-        background-image: url('../images/photography.png');
+      .pixfizz{
+        grid-row:span 6;
+        grid-column: span  10;
+        background-image: url('../images/work/pixfizz.png');
       }
       .salesforce{
-        grid-row: span 25;
-        grid-column: span  3;
-        background-image: url('../images/salesforce-hooks.jpg');
+        grid-row: span 4;
+        grid-column: span  5;
+        background-image: url('../images/work/salesforce-hooks.jpg');
       }
       .twilio{
-        grid-row: span 25;
-        grid-column: span  4;
-        background-image: url('../images/twilio.jpg');
+        grid-row: span 4;
+        grid-column: span  5;
+        background-image: url('../images/work/twilio.jpg');
       }
-    }
 
-
-    @media screen and (min-width: 1601px){
-      .portfolio{
-        display:grid;
-        height:1550px;
-        grid-template-rows:repeat(10,1fr);
-        grid-template-columns:repeat(10,1fr);
-
-      }
     }
 
     /* MEDIA QUERIES FOR FOOTER */
