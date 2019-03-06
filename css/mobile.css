@@ -1,9 +1,9 @@
 /* HERO CONTAINER STYLING */
 .hero-container{
-  height:250px;
+  height:450px;
   display:flex;
   flex-direction: row;
-  background-image: linear-gradient(rgba(70, 172, 194, 0.5),rgba(221, 221, 221, 0.1)), url('../images/work/Santiago-Contour.png');
+  background-image: linear-gradient(rgba(70, 172, 194, 0.5),rgba(221, 221, 221, 0.1)), url('../images/Santiago-Contour.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@
   margin: 0 auto;
   padding-top: 50px;
 
-  background-image: url('../images/work/road2.png');
+  background-image: url('../images/road2.png');
 }
 .timeline ul li::after {
   content: '';
@@ -117,7 +117,7 @@
 }
 .timeline ul li.in-view::after {
 
-  background-image: url('../images/work/bus-stop.png');
+  background-image: url('../images/bus-stop.png');
 }
 .timeline ul li div {
   visibility: hidden;
@@ -340,7 +340,7 @@ font-family: 'Neucha', cursive;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  mask: url('../images/work/skills@0,5x.png');
+  mask: url('../images/skills@0,5x.png');
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 
   animation: polygons 10s infinite;
@@ -507,6 +507,8 @@ a {
   }
   .Navbar__ToggleShow{
     display:flex;
+
+
   }
 }
 
