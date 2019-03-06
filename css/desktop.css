@@ -75,6 +75,18 @@ font-size: 60px;
   font-size: 30px;
   padding: 10px;
 }
+.email-button{
+  width:130px;
+  font-size:25px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  background: rgb(55,55,55);
+  padding: 0 20px;
+}
 
 @media only screen and (min-width:769px) {
   .Navbar__Items{
