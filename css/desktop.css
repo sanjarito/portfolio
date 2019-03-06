@@ -60,6 +60,8 @@ font-size: 60px;
 
 .Header-Title-Logo{
   display:flex;
+      margin-top: 50px;
+      font-size: 20px;
 }
 .Header-Image-Logo{
     margin-left: 50px;
